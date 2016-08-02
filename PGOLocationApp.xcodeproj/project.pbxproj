@@ -15,6 +15,7 @@
 		122E8E381D50DB5D00A0B14A /* Schlosspark_Eckensee.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 122E8E361D50DB5D00A0B14A /* Schlosspark_Eckensee.gpx */; };
 		122E8E391D50DB5D00A0B14A /* Schlosspark_Brauhaus_3stops.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 122E8E371D50DB5D00A0B14A /* Schlosspark_Brauhaus_3stops.gpx */; };
 		122E8E3B1D50DB7800A0B14A /* pokemonLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 122E8E3A1D50DB7800A0B14A /* pokemonLocation.gpx */; };
+		122E8E3D1D50DCD500A0B14A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 122E8E3C1D50DCD500A0B14A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		122E8E361D50DB5D00A0B14A /* Schlosspark_Eckensee.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Schlosspark_Eckensee.gpx; sourceTree = "<group>"; };
 		122E8E371D50DB5D00A0B14A /* Schlosspark_Brauhaus_3stops.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Schlosspark_Brauhaus_3stops.gpx; sourceTree = "<group>"; };
 		122E8E3A1D50DB7800A0B14A /* pokemonLocation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pokemonLocation.gpx; path = "../../Pokemon-Go-Controller/pokemonLocation.gpx"; sourceTree = "<group>"; };
+		122E8E3C1D50DCD500A0B14A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				122E8E2A1D50DB4700A0B14A /* Assets.xcassets */,
 				122E8E2C1D50DB4700A0B14A /* LaunchScreen.storyboard */,
 				122E8E2F1D50DB4700A0B14A /* Info.plist */,
+				122E8E3C1D50DCD500A0B14A /* README.md */,
 			);
 			path = PGOLocationApp;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				122E8E3D1D50DCD500A0B14A /* README.md in Sources */,
 				122E8E261D50DB4700A0B14A /* ViewController.swift in Sources */,
 				122E8E241D50DB4700A0B14A /* AppDelegate.swift in Sources */,
 			);
