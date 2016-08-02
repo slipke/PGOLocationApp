@@ -12,6 +12,9 @@
 		122E8E291D50DB4700A0B14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122E8E271D50DB4700A0B14A /* Main.storyboard */; };
 		122E8E2B1D50DB4700A0B14A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122E8E2A1D50DB4700A0B14A /* Assets.xcassets */; };
 		122E8E2E1D50DB4700A0B14A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122E8E2C1D50DB4700A0B14A /* LaunchScreen.storyboard */; };
+		122E8E381D50DB5D00A0B14A /* Schlosspark_Eckensee.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 122E8E361D50DB5D00A0B14A /* Schlosspark_Eckensee.gpx */; };
+		122E8E391D50DB5D00A0B14A /* Schlosspark_Brauhaus_3stops.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 122E8E371D50DB5D00A0B14A /* Schlosspark_Brauhaus_3stops.gpx */; };
+		122E8E3B1D50DB7800A0B14A /* pokemonLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 122E8E3A1D50DB7800A0B14A /* pokemonLocation.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		122E8E2A1D50DB4700A0B14A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		122E8E2D1D50DB4700A0B14A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		122E8E2F1D50DB4700A0B14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		122E8E361D50DB5D00A0B14A /* Schlosspark_Eckensee.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Schlosspark_Eckensee.gpx; sourceTree = "<group>"; };
+		122E8E371D50DB5D00A0B14A /* Schlosspark_Brauhaus_3stops.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Schlosspark_Brauhaus_3stops.gpx; sourceTree = "<group>"; };
+		122E8E3A1D50DB7800A0B14A /* pokemonLocation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pokemonLocation.gpx; path = "../../Pokemon-Go-Controller/pokemonLocation.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		122E8E221D50DB4700A0B14A /* PGOLocationApp */ = {
 			isa = PBXGroup;
 			children = (
+				122E8E351D50DB5300A0B14A /* Locations */,
 				122E8E231D50DB4700A0B14A /* AppDelegate.swift */,
 				122E8E251D50DB4700A0B14A /* ViewController.swift */,
 				122E8E271D50DB4700A0B14A /* Main.storyboard */,
@@ -62,6 +69,16 @@
 				122E8E2F1D50DB4700A0B14A /* Info.plist */,
 			);
 			path = PGOLocationApp;
+			sourceTree = "<group>";
+		};
+		122E8E351D50DB5300A0B14A /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				122E8E3A1D50DB7800A0B14A /* pokemonLocation.gpx */,
+				122E8E361D50DB5D00A0B14A /* Schlosspark_Eckensee.gpx */,
+				122E8E371D50DB5D00A0B14A /* Schlosspark_Brauhaus_3stops.gpx */,
+			);
+			name = Locations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +113,7 @@
 				TargetAttributes = {
 					122E8E1F1D50DB4700A0B14A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7VU5M28X53;
 					};
 				};
 			};
@@ -122,8 +140,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				122E8E3B1D50DB7800A0B14A /* pokemonLocation.gpx in Resources */,
+				122E8E381D50DB5D00A0B14A /* Schlosspark_Eckensee.gpx in Resources */,
 				122E8E2E1D50DB4700A0B14A /* LaunchScreen.storyboard in Resources */,
 				122E8E2B1D50DB4700A0B14A /* Assets.xcassets in Resources */,
+				122E8E391D50DB5D00A0B14A /* Schlosspark_Brauhaus_3stops.gpx in Resources */,
 				122E8E291D50DB4700A0B14A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PGOLocationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.slipke.PGOLocationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +286,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PGOLocationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.slipke.PGOLocationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
